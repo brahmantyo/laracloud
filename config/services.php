@@ -35,4 +35,11 @@ return [
         ],
     ],
 
+    'whatsapp' => [
+        'url' => env('WHATSAPP_URL', ''),
+        'token' => env('WHATSAPP_KEY', ''),
+    ],
+
+    'message_driver' => env('MESSAGE_DRIVER', 'whatsapp'),
+
 ];
