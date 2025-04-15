@@ -4,19 +4,17 @@ namespace App;
 
 class Whatsapp
 {
-    protected String $destination;
+    protected string $destination;
 
-    protected String $message;
+    protected string $message;
 
-    public function sendSingleMessage(String $destination, String $message):void
+    public function sendSingleMessage(string $destination, string $message): void
     {
-	$this->destination = $destination;
-	$this->message = $message;
+        $this->destination = $destination;
+        $this->message = $message;
+
         return $this->send();
     }
 
-    public function sendMassMessage(Message $messages): void
-    {
-        
-    }
+    public function sendMassMessage(Message $messages): void {}
 }
